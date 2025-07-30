@@ -1,5 +1,4 @@
 export class Usuario {
-
   #nome: string;
   #idade: number;
   #senha: string;
@@ -17,4 +16,9 @@ export class Usuario {
   verificarSenha(tentativa: string): boolean {
     return this.#senha === tentativa;
   }
+
+  redefinirSenha(novaSenha: string): void {
+    this.#senha = novaSenha;
+  }
 }
+
